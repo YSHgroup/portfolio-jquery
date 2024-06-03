@@ -22,10 +22,10 @@ async function getUserDetails() {
 
 	// Fetch data from the API
 	try {
-		const response = await fetch('https://api.github.com/users/akashrchandran');
+		const response = await fetch('https://api.github.com/users/YSHgroup');
 		if (response.ok) {
 			const data = await response.json();
-
+			console.log('git data -->', response, data)
 			// Cache the data along with the timestamp
 			const timestamp = Date.now();
 			localStorage.setItem('githubUserData', JSON.stringify({ data, timestamp }));

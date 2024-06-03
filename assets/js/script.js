@@ -77,9 +77,9 @@ function sendEmail() {
     const email = document.getElementById("form-email");
     const message = document.getElementById("form-message");
     let data = {
-        service_id: 'service_9fnrphq',
-        template_id: 'template_ie65z47',
-        user_id: 'XCfDptyHXB-M91Vj3',
+        service_id: 'service_04xit6i',
+        template_id: 'template_53gw40q',
+        user_id: '_IIHgfZnjdq_o2tOj',
         template_params: {
             name: name.value,
             email: email.value,
@@ -88,6 +88,8 @@ function sendEmail() {
             'g-recaptcha-response': response
         }
     };
+    console.log('form submit data: ', data)
+    
     emailbutton.style = "cursor: pointer; pointer-events: none;";
     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
         type: 'POST',

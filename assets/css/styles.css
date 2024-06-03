@@ -479,6 +479,10 @@ canvas {
   }
 
 /* Certification */
+#certification {
+    display: none;
+}
+
 .certification_wrapper img {
     box-shadow: 0 0 16px 4px var(--bg-dark-blue);
     border-radius: 10px;

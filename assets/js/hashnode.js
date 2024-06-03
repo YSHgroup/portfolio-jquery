@@ -107,4 +107,4 @@ const parseDate = (date) => {
   return `${parsedData.getDate()} ${months[parsedData.getMonth()]} ${parsedData.getFullYear()}`
 }
 
-fetchBlogs();
+// fetchBlogs();
